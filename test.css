@@ -1,12 +1,11 @@
 body {
     margin: 0;
+    background-image: url(img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90.6vh;
 }
 
-#background {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
 #outer-box {
     width: 80%;
     height: 80vh;
@@ -18,17 +17,19 @@ body {
 }
 
 #left-inner-box {
-    background-color: black;
+    background-color: rgb(250,250,250);
+     border-radius: 1%;
 }
 
 #right-inner-box {
-    background-color: red;
+    background-color: rgb(250,250,250);
+    border-radius: 1%;
 }
 
 #card {
-    background-color: green;
+    background-color: rgb(240,240,240);
     width: 100%;
-    height: 100px;
+    height: 130px;
     margin-bottom: 20px;
     
 }
@@ -41,4 +42,9 @@ body {
 .card-undertitle {
     text-align: center;
     font-family: sans-serif;
+}
+
+
+.card-description {
+    text-align: center;
 }
