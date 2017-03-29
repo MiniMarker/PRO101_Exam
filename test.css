@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#outer-box {
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1%;
+}
+
+#left-inner-box {
+    background-color: black;
+}
+
+#right-inner-box {
+    background-color: red;
+}
+
+#card {
+    background-color: green;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    
+}
+
+.card-title {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.card-undertitle {
+    text-align: center;
+    font-family: sans-serif;
+}
