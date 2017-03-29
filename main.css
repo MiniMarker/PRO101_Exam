@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS-dokument */
+
+
+
+img  {
+      width: 700px;
+    height: 500px;
+    padding-top: 100px;
+    padding-left: 0px;
+    padding-right: 50px;
+   float:right;
+  align-content: center;
+}
+
+header  {
+      width: 650px;
+    height: 10px;
+    background-color: bisque;
+    
+    
+
+}
+    
