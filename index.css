@@ -25,12 +25,12 @@ body {
 
 #buttons {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 100px;
     position: relative;
-    width: 700px;
     height: 100px;
     top: 60%;
+    width: 900px;
     margin: auto;
 }
 
@@ -68,6 +68,8 @@ body {
 }
 
 #loginbutton {
+    font-family: sans-serif;
+    text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
     top: 5px;
     width: 6%;
     height: 34px;
