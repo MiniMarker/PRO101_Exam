@@ -46,7 +46,7 @@ body {
 }
 
 .card-img{
-    height: 200px;
+    max-height: 200px;
     margin: auto;
 }
 .card-title {
@@ -68,12 +68,19 @@ body {
 .card-description{
     font-family: sans-serif;
     position: relative;
-    top: -220px;
-    left: 56%;:;
+    top: -240px;
+    left: 56%;
     width: 250px;
     
 }
 
 #map {
     height: 100%;
+}
+
+.stars{
+    position: relative;
+    width: 100px;
+    top: -233px;
+    left: 56%;
 }

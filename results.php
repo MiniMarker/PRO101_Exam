@@ -25,7 +25,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-<link href="test.css" type="text/css" rel="stylesheet">
+<link href="results.css" type="text/css" rel="stylesheet">
 <script src="map-script.js"></script>
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDom7SHx9ZtEf7dQKyTbbvGjEjkG-aTc6o&callback=initMap">
@@ -49,7 +49,22 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                 
                 <h1 class="card-title"><?= $resturant["name"] ?></h1>
                 
-                <h2 class="card-rating">Rating : <?= $resturant["rating"] ?></h2>
+                <?php if ($resturant["rating"] == 5) { ?>  
+                    <img class="stars" src="img/stars/5-stars.png">
+                        
+                <?php } elseif ($resturant["rating"] == 4) { ?>
+                    <img class="stars" src="img/stars/4-stars.png">
+                
+                <?php } elseif ($resturant["rating"] == 3) { ?>
+                    <img class="stars" src="img/stars/3-stars.png">
+                
+                <?php } elseif ($resturant["rating"] == 2) { ?>
+                    <img class="stars" src="img/stars/2-stars.png">
+                
+                <?php } elseif ($resturant["rating"] == 1) { ?>
+                    <img class="stars" src="img/stars/1-star.png">
+                
+                <?php } ?>
                 
                 <div class="card-description">
                 <p ><?= $resturant["description"] ?> </p>
