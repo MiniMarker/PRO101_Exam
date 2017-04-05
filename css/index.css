@@ -1,6 +1,8 @@
-
 body {
     margin: 0;
+}
+a {
+    text-decoration: none;
 }
 
 #container {
@@ -21,15 +23,15 @@ body {
     top: 2%;
 }
 
+
 /* TEKST */
 
 #textbox {
     width: 60%;
     height: 100px;
     position: relative;
-    top: 15%;
+    top: 10%;
     margin: auto;
-    
 }
 
 #title {
@@ -59,6 +61,7 @@ hr {
     top: 37%;
 }
 
+
 /* BUTTONS */
 
 #buttons {
@@ -72,7 +75,7 @@ hr {
     margin: auto;
 }
 
-.button{
+.button {
     width: 150px;
     height: 150px;
     position: relative;
@@ -86,13 +89,13 @@ hr {
     margin: auto;
     padding-top: 9%;
 }
-.button p{
+
+.button p {
     text-align: center;
     color: white;
     font-size: 1.2em;
     position: relative;
     top: -10px;
-    
 }
 
 #hotel-button {
@@ -119,9 +122,10 @@ hr {
     background-color: rgb(169, 169, 169);
 }
 
+
 /* BOOKMARK */
 
-#bookmark{
+#bookmark {
     position: absolute;
     top: 0;
     left: 7%;

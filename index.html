@@ -1,67 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-    
-<!-- CSS -->
-<link href="css/index.css" type="text/css" rel="stylesheet">
-<link href="OpenSans/stylesheet.css" type="text/css" rel="stylesheet">
-    
-    
-<title>Gruppe 17</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS -->
+    <link href="css/index.css" type="text/css" rel="stylesheet">
+    <link href="OpenSans/stylesheet.css" type="text/css" rel="stylesheet">
+
+
+    <title>Gruppe 17</title>
 </head>
+
 <body>
-<div id="container">
-<img id="background" src="img/background.png">
-    <div id="bookmark">
-        <img src="img/bookmark.png">
+    <div id="container">
+        <img id="background" src="img/background.png">
+        <div id="bookmark">
+            <img src="img/bookmark.png">
+        </div>
+
+        <div id="textbox">
+            <h1 id="title"> Velkommen til <span contenteditable>Westerdals</span></h1>
+            <!-- Easter Egg? "contenteditable" -->
+            <h3 id="undertitle">Her kan du utforske nærområdet rundt skolen</h3>
+        </div>
+
+        <div id="buttons">
+            <a href="">
+                <div class="button" id="hotel-button">
+                    <img id="hotel-img" src="img/icons/hotel.png">
+                    <p>Hoteller</p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="button" id="cafe-button">
+                    <img src="img/icons/coffee-cup.png">
+                    <p>Café</p>
+                </div>
+            </a>
+
+            <a href="resturants.php">
+                <div class="button" id="resturant-button">
+                    <img src="img/icons/resturants.png">
+                    <p>Resturanter</p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="button" id="beer-button">
+                    <img src="img/icons/drink-beer-jar.png">
+                    <p>Barer</p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="button" id="ticket-button">
+                    <img src="img/icons/tickets.png">
+                    <p>Eventer</p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="button" id="activity-button">
+                    <img src="img/icons/activity.png">
+                    <p>Aktiviteter</p>
+                </div>
+            </a>
+        </div>
+
+
+
+        <img id="languageFlag" src="img/flag/english2.png">
     </div>
-    
-    <div id="textbox">
-        <h1 id="title"> Velkommen til <span contenteditable>Westerdals</span></h1> <!-- Easter Egg? "contenteditable" -->
-        <h3 id="undertitle">Her kan du utforske nærområdet rundt skolen</h3>
-    </div>
-    
-    <div id="buttons">
-            <div class="button" id="hotel-button">
-                <img id="hotel-img" src="img/icons/hotel.png">
-                <p>Hoteller</p>
-            </div>
-        
-            <div class="button" id="cafe-button">
-                <img src="img/icons/coffee-cup.png">
-                <p>Café</p>
-            </div>
-                
-            <div class="button" id="resturant-button">
-                <img src="img/icons/resturants.png">
-                <p>Resturanter</p>
-            </div>
-                
-            <div class="button" id="beer-button">
-                <img src="img/icons/drink-beer-jar.png">
-                <p>Barer</p>
-            </div>
-        
-            <div class="button" id="ticket-button">
-                <img src="img/icons/tickets.png">
-                <p>Eventer</p>
-            </div>
-                
-            <div class="button" id="activity-button">
-                <img src="img/icons/activity.png">
-                <p>Aktiviteter</p>
-            </div>
-    </div>
-    
-    
-    
-    <img id="languageFlag" src="img/flag/english2.png">
-</div>
 
 </body>
 </html>
