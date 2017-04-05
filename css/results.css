@@ -66,21 +66,22 @@ body {
 .cards {
     background-color: rgb(240, 240, 240);
     width: 100%;
-    height: 200px;
+    height: 220px;
     margin-bottom: 20px;
     outline: 1px solid;
     outline-color: rgb(220, 220, 220);
 }
 
 .card-img {
-    max-height: 200px;
+    height: 220px;
     margin: auto;
+    width: 54%;
 }
 
 .card-title {
     position: relative;
     font-family: sans-serif;
-    top: -220px;
+    top: -230px;
     width: 40%;
     left: 58%;
 }
@@ -88,7 +89,7 @@ body {
 .card-stars {
     position: relative;
     width: 100px;
-    top: -233px;
+    top: -245px;
     left: 58%;
 }
 
@@ -103,9 +104,9 @@ body {
 .card-description {
     font-family: sans-serif;
     position: relative;
-    top: -240px;
+    top: -259px;
     left: 58%;
-    width: 250px;
+    width: 40%;
 }
 
 #map {
