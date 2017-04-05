@@ -50,17 +50,8 @@ a {
     position: relative;
     text-align: center;
     font-size: 2em;
-    font-family: sans-serif;
     top: -40%;
 }
-
-hr {
-    border: 1px solid grey;
-    width: 700px;
-    position: relative;
-    top: 37%;
-}
-
 
 /* BUTTONS */
 

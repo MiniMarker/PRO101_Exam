@@ -8,7 +8,7 @@ p{
     font-family: 'open_sansregular';
 }
 
-.button p{
+.button p, #undertitle{
     font-family: 'open_sanssemibold';
 }
 
