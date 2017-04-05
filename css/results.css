@@ -7,13 +7,13 @@ a {
     width: 0px;
     background: transparent;
 }
-html{
+
+html {
     overflow: hidden;
 }
 
 body {
     margin: 0;
-    
 }
 
 #container {
@@ -39,7 +39,9 @@ body {
 
 #page-title {
     text-align: center;
-    font-family: sans-serif;
+    text-transform: uppercase;
+    color: rgb(0, 63, 100);
+    letter-spacing: 3px;
     font-size: 1.4em;
     position: relative;
     padding-top: 20px;
@@ -63,6 +65,9 @@ body {
     overflow-y: auto;
 }
 
+
+/* CARDS */
+
 .cards {
     background-color: rgb(240, 240, 240);
     width: 100%;
@@ -74,7 +79,6 @@ body {
 
 .card-img {
     height: 220px;
-    margin: auto;
     width: 54%;
 }
 
@@ -93,6 +97,7 @@ body {
     left: 58%;
 }
 
+
 /* .card-rating {
     position: relative;
     font-family: sans-serif;
@@ -108,6 +113,9 @@ body {
     left: 58%;
     width: 40%;
 }
+
+
+/* MAP */
 
 #map {
     height: 100%;
