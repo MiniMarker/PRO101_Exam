@@ -1,19 +1,15 @@
 
 /* Klasser & id */
 h1{
-    font-family: 'open_sansbold';
+    font-family: 'open_sansextrabold';
 }
 
 p{
     font-family: 'open_sansregular';
 }
 
-.text-title, .text-undertitle, .frame-title{
+.button p{
     font-family: 'open_sanssemibold';
-}
-
-.year{
-    font-family: 'open_sansbold_italic';
 }
 
 /* Fonts */
