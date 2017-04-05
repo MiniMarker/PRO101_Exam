@@ -32,7 +32,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 
     <!-- JAVASCRPT -->
     <script src="js/script.js"></script>
-    <script src="map-script.js"></script>
+    <script src="js/map-script.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDom7SHx9ZtEf7dQKyTbbvGjEjkG-aTc6o&callback=initMap">
 
 
@@ -46,10 +46,8 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
     <div id="container">
         <img id="background" src="img/background.png">
 
-        <!--<a href="index.html"> -->
-            <img onclick="showDiv()" id="menu-botton" src="img/menu.png">
-
-        <!-- </a> -->
+        <img onclick="showDiv()" id="menu-botton" src="img/menu.png">
+        <img onclick="showDiv()" id="close-menu-button" src="img/menu2.png">
 
         <div id="page-title">
             <h1>Resturanter</h1>

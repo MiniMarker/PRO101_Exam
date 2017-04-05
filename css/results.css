@@ -63,7 +63,7 @@ body {
 
 /* MENUBAR */
 
-#menu-botton {
+#menu-botton, #close-menu-button {
     position: absolute;
     width: 70px;
     left: 20px;
@@ -71,13 +71,9 @@ body {
     z-index: 2;
 }
 
-/* #menubar:hover {
-    top: 0px;
+#close-menu-button{
+    display: none;
 }
-
-#menu-botton:hover + #menubar {
-    top: 0px;
-} */
 
 #menubar{
     position: absolute;
@@ -102,6 +98,7 @@ body {
 }
 
 .button {
+    top: 3px;
     width: 120px;
     height: 120px;
     position: relative;
