@@ -22,7 +22,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
     <meta name="author" content="">
 
     <!-- CSS -->
-    <link href="css/results.css" type="text/css" rel="stylesheet">
+    <link href="css/event.css" type="text/css" rel="stylesheet">
     <link href="OpenSans/stylesheet.css" type="text/css" rel="stylesheet">
 
     <!-- JAVASCRPT -->
@@ -41,7 +41,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
         <img id="background" src="img/background.png">
 
         <img onclick="showDiv()" id="menu-botton" src="img/menu.png">
-        <img onclick="showDiv()" id="close-menu-button" src="img/menu2.png"> 
+        <img onclick="showDiv()" id="close-menu-button" src="img/menu2.png">
 
         <div id="page-title">
             <h1>Resturanter</h1>
@@ -93,7 +93,6 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
             </div>
         </div>
         <div id="outer-box">
-            <div id="left-inner-box">
 
                 <?php foreach($resturants as $resturant) { ?>
 
@@ -105,36 +104,12 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                             <?= $resturant["name"] ?>
                         </h1>
                     </a>
-
-                    <?php if ($resturant["rating"] == 5) { ?>
-                    <img class="card-stars" src="img/stars/5-stars.png">
-
-                    <?php } elseif ($resturant["rating"] == 4) { ?>
-                    <img class="card-stars" src="img/stars/4-stars.png">
-
-                    <?php } elseif ($resturant["rating"] == 3) { ?>
-                    <img class="card-stars" src="img/stars/3-stars.png">
-
-                    <?php } elseif ($resturant["rating"] == 2) { ?>
-                    <img class="card-stars" src="img/stars/2-stars.png">
-
-                    <?php } elseif ($resturant["rating"] == 1) { ?>
-                    <img class="card-stars" src="img/stars/1-star.png">
-
-                    <?php } ?>
-
                     <div class="card-description">
                         <p>
                             <?= $resturant["description"] ?>
                         </p>
                     </div>
-                </div>
-
                 <?php } ?>
-            </div>
-
-            <div id="right-inner-box">
-                <div id="map"></div>
             </div>
         </div>
     </div>
