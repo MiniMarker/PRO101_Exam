@@ -1,10 +1,5 @@
 <?php 
-$port = 8889;
-$username = "root";
-$password = "root";
-$name = "eksamen_gruppe17";
-
-$connection = new PDO("mysql:host=localhost;dbname={$name};port={$port}", $username, $password);
+require "php/db-connection.php";
 
 $statement = $connection -> prepare('SELECT * FROM resturant');
 
@@ -32,7 +27,6 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 
     <!-- JAVASCRPT -->
     <script src="js/script.js"></script>
-    <script src="js/map-script.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDom7SHx9ZtEf7dQKyTbbvGjEjkG-aTc6o&callback=initMap">
 
 
@@ -52,51 +46,51 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
         <div id="page-title">
             <h1>Resturanter</h1>
         </div>
-        
+
         <div id="menubar">
             <div id="buttons">
-            <a href="index.html">
-                <div class="button" id="hotel-button">
-                    <img id="hotel-img" src="img/icons/hotel.png">
-                    <p>Hoteller</p>
-                </div>
-            </a>
+                <a href="index.html">
+                    <div class="button" id="hotel-button">
+                        <img id="hotel-img" src="img/icons/hotel.png">
+                        <p>Hoteller</p>
+                    </div>
+                </a>
 
-            <a href="index.html">
-                <div class="button" id="cafe-button">
-                    <img src="img/icons/coffee-cup.png">
-                    <p>Café</p>
-                </div>
-            </a>
+                <a href="index.html">
+                    <div class="button" id="cafe-button">
+                        <img src="img/icons/coffee-cup.png">
+                        <p>Café</p>
+                    </div>
+                </a>
 
-            <a href="resturants.php">
-                <div class="button" id="resturant-button">
-                    <img src="img/icons/resturants.png">
-                    <p>Resturanter</p>
-                </div>
-            </a>
+                <a href="resturants.php">
+                    <div class="button" id="resturant-button">
+                        <img src="img/icons/resturants.png">
+                        <p>Resturanter</p>
+                    </div>
+                </a>
 
-            <a href="index.html">
-                <div class="button" id="beer-button">
-                    <img src="img/icons/drink-beer-jar.png">
-                    <p>Barer</p>
-                </div>
-            </a>
+                <a href="index.html">
+                    <div class="button" id="beer-button">
+                        <img src="img/icons/drink-beer-jar.png">
+                        <p>Barer</p>
+                    </div>
+                </a>
 
-            <a href="index.html">
-                <div class="button" id="ticket-button">
-                    <img src="img/icons/tickets.png">
-                    <p>Eventer</p>
-                </div>
-            </a>
+                <a href="index.html">
+                    <div class="button" id="ticket-button">
+                        <img src="img/icons/tickets.png">
+                        <p>Eventer</p>
+                    </div>
+                </a>
 
-            <a href="index.html">
-                <div class="button" id="activity-button">
-                    <img src="img/icons/activity.png">
-                    <p>Aktiviteter</p>
-                </div>
-            </a>
-        </div>
+                <a href="index.html">
+                    <div class="button" id="activity-button">
+                        <img src="img/icons/activity.png">
+                        <p>Aktiviteter</p>
+                    </div>
+                </a>
+            </div>
         </div>
         <div id="outer-box">
             <div id="left-inner-box">
@@ -104,9 +98,9 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                 <?php foreach($resturants as $resturant) { ?>
 
                 <div class="cards">
-                    <img class="card-img" src="<?= $resturant[" img_path "] ?>">
-
                     <a href="<?= $resturant[" link-path "] ?>">
+                        <img class="card-img" src="<?= $resturant["img_path"] ?>">
+                        
                         <h1 class="card-title">
                             <?= $resturant["name"] ?>
                         </h1>

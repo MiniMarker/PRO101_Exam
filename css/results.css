@@ -40,7 +40,7 @@ body {
     position: relative;
     padding-top: 20px;
     opacity: 1;
-    transition: opacity 1s ease;
+    transition: opacity .5s ease;
 }
 
 #outer-box {
@@ -83,8 +83,7 @@ body {
     z-index: 1;
     top: -150px;
     opacity: 1;
-    transition: top 1s ease;
-
+    transition: top .5s ease;
 }
 
 #buttons {

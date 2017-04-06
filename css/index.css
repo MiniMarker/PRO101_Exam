@@ -1,3 +1,7 @@
+html {
+    overflow: hidden;
+}
+
 body {
     margin: 0;
 }
@@ -23,11 +27,20 @@ a {
     top: 2%;
 }
 
+/* BOOKMARK */
+
+#bookmark {
+    position: absolute;
+    top: -20px;
+    left: 7%;
+    height: 251px;
+    width: 135px;
+}
 
 /* TEKST */
 
 #textbox {
-    width: 60%;
+    max-width: 1000px;
     height: 100px;
     position: relative;
     top: 10%;
@@ -58,11 +71,11 @@ a {
 #buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    grid-column-gap: 10%;
+    grid-row-gap: 40px;
     position: relative;
     top: 40%;
-    width: 550px;
+    width: 610px;
     margin: auto;
 }
 
@@ -113,13 +126,30 @@ a {
     background-color: rgb(169, 169, 169);
 }
 
+/* MEDIA QUERY */
 
-/* BOOKMARK */
+@media screen and (max-width: 942px) {
+    #title {
+        font-size: 4.5em;
+    }
+    #undertitle {
+        font-size: 1.6em;
+        padding-top: 0px;
+    }
+    
+    #buttons {
+        width: 400px;
+    }
+    
+    .button {
+        width: 120px;
+        height: 120px;
+    }
+}
 
-#bookmark {
-    position: absolute;
-    top: 0;
-    left: 7%;
-    height: 300px;
-    width: 154px;
+@media screen and (max-width: 641px) {
+    #title {
+        font-size: 3.5em;
+    }
+    
 }
