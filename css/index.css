@@ -66,6 +66,13 @@ a {
     top: -40%;
 }
 
+#textbox p{
+    text-align: center;
+    position: relative;
+    top: -70px;
+    color: rgb(0, 63, 100);
+}
+
 /* BUTTONS */
 
 #buttons {
