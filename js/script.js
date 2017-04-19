@@ -1,3 +1,4 @@
+
 // MENUBAR
 function showDiv() {
     "use strict";
@@ -15,7 +16,7 @@ function showDiv() {
 //Velkommen i flere språk
 function myFunction() {
     "use strict";
-    var x = Math.floor((Math.random() * 11) + 1);
+    var x = Math.floor((Math.random() * 10) + 1);
     var y = "(Det står velkommen på ";
     document.getElementById("demo").innerHTML = x;
     document.getElementById("language").innerHTML = y;
@@ -41,7 +42,7 @@ function myFunction() {
             document.getElementById("language").innerHTML = y + "italiensk)";
             document.getElementById('undertitle').style.top = "-80%";
             break;
-        case 4: //SvensK
+        case 4: //Svensk
             document.getElementById("demo").innerHTML = "Välkommen";
             document.getElementById("language").innerHTML = y + "svensk)";
             document.getElementById('undertitle').style.top = "-80%";
@@ -76,7 +77,7 @@ function myFunction() {
             document.getElementById("language").innerHTML = y + "swahili)";
             document.getElementById('undertitle').style.top = "-80%";
             break;
-        default:
+        default: //norsk (vil aldri intreffe)
             document.getElementById("demo").innerHTML = "Velkommen";
             document.getElementById("language").innerHTML = y + "norsk)";
             document.getElementById('undertitle').style.top = "-80%";

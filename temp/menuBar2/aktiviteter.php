@@ -56,7 +56,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                     </div>
                 </a>
 
-                <a href="index.html">
+                <a href="cafes.php">
                     <div class="button" id="cafe-button">
                         <img src="img/icons/coffee-cup.png">
                         <p>Café</p>
