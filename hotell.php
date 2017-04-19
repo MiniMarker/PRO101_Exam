@@ -1,12 +1,12 @@
 <?php 
 require "php/db-connection.php";
 
-$statement = $connection -> prepare('SELECT * FROM resturant');
+$statement = $connection -> prepare('SELECT * FROM hotel');
 
 $statement -> execute();
 
 while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
-    $resturants[] = $row;
+    $hotels[] = $row;
 }
 
 ?>
@@ -32,7 +32,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 
     </script>
 
-    <title>Resturanter</title>
+    <title>Hotell</title>
 
 </head>
 
@@ -44,7 +44,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
         <img onclick="showDiv()" id="close-menu-button" src="img/menu2.png">
 
         <div id="page-title">
-            <h1>Resturanter</h1>
+            <h1>Hoteller</h1>
         </div>
 
         <div id="menubar">
@@ -95,18 +95,18 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
         <div id="outer-box">
             <div id="left-inner-box">
 
-                <?php foreach($resturants as $resturant) { ?>
+                <?php foreach($hotels as $hotel) { ?>
 
                 <div class="cards">
-                    <a href="<?= $resturant["link-path"] ?>">
-                        <img class="card-img" src="<?= $resturant["img_path"] ?>">
+                    <a href="<?= $hotel["link-path"] ?>">
+                        <img class="card-img" src="<?= $hotel["img_path"] ?>">
                         
                         <h1 class="card-title">
-                            <?= $resturant["name"] ?>
+                            <?= $hotel["name"] ?>
                         </h1>
                     </a>
 
-                    <?php if ($resturant["rating"] == 5) { ?>
+                    <?php if ($hotel["rating"] == 5) { ?>
                     <img class="card-stars" src="img/stars/5-stars.png">
 
                     <?php } elseif ($resturant["rating"] == 4) { ?>
@@ -125,7 +125,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 
                     <div class="card-description">
                         <p>
-                            <?= $resturant["description"] ?>
+                            <?= $hotel["description"] ?>
                         </p>
                     </div>
                 </div>
