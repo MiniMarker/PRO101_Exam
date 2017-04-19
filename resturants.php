@@ -47,14 +47,14 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 
         <div id="menubar">
             <div id="buttons">
-                <a href="index.html">
+                <a href="hotell.php">
                     <div class="button" id="hotel-button">
                         <img id="hotel-img" src="img/icons/hotel.png">
                         <p>Hoteller</p>
                     </div>
                 </a>
 
-                <a href="index.html">
+                <a href="cafes.php">
                     <div class="button" id="cafe-button">
                         <img src="img/icons/coffee-cup.png">
                         <p>Café</p>
@@ -68,21 +68,21 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                     </div>
                 </a>
 
-                <a href="index.html">
+                <a href="bar.php">
                     <div class="button" id="beer-button">
                         <img src="img/icons/drink-beer-jar.png">
                         <p>Barer</p>
                     </div>
                 </a>
 
-                <a href="index.html">
+                <a href="events.php">
                     <div class="button" id="ticket-button">
                         <img src="img/icons/tickets.png">
                         <p>Eventer</p>
                     </div>
                 </a>
 
-                <a href="index.html">
+                <a href="aktiviteter.php">
                     <div class="button" id="activity-button">
                         <img src="img/icons/activity.png">
                         <p>Aktiviteter</p>
@@ -138,13 +138,11 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
     </div>
     
     <script>
-        // This example displays a marker at the center of Australia.
-        // When the user clicks the marker, an info window opens.
-        // The maximum width of the info window is set to 200 pixels.
-
+        
+        // GOOGLE MAPS
         function initMap() {
 
-            // sette punkter
+            // sette punkter i koordinater
             var kontrast = {
                 lat: 59.922473,
                 lng: 10.751005
@@ -165,24 +163,24 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                 lat: 59.922524,
                 lng: 10.751749
             };
-
-
-
+            
+            
+            // Init kart
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 18,
                 center: hitchhiker
             });
 
-            // Sette Strings
+            // Tekst i infobokser
             var dognvillString = '<div id="content">' +
-                '<div id="siteNotice"></div> <h1 id="firstHeading" class="firstHeading">Dognvill</h1> <div id="bodyContent">' +
+                '<div id="siteNotice"></div> <h1 id="firstHeading" class="firstHeading">Døgnvill</h1> <div id="bodyContent">' +
                 '<p> Velkommen til Døgnvill!</p>' +
                 '</div>' +
                 '</div>';
 
 
             var luckyString = '<div id="content">' +
-                '<div id="siteNotice"></div> <h1 id="firstHeading" class="firstHeading">Lucky</h1> <div id="bodyContent">' +
+                '<div id="siteNotice"></div> <h1 id="firstHeading" class="firstHeading">Lucky Bird</h1> <div id="bodyContent">' +
                 '<p> Gira på litt lucky??</p>' +
                 '</div>' +
                 '</div>';
@@ -200,7 +198,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                 '</div>' +
                 '</div>';
 
-            // sette vinduer
+            // sette infobokser og fylle dem med tekst
             var luckyInfowindow = new google.maps.InfoWindow({
                 content: luckyString,
                 maxWidth: 300
@@ -222,8 +220,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
             });
 
 
-            // sette markører
-
+            // sette markører på kartet
             var kontrastMark = new google.maps.Marker({
                 position: kontrast,
                 map: map

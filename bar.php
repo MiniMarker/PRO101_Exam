@@ -78,7 +78,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                     </div>
                 </a>
 
-                <a href="event.php">
+                <a href="events.php">
                     <div class="button" id="ticket-button">
                         <img src="img/icons/tickets.png">
                         <p>Eventer</p>
