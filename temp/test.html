@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Info window with <code>maxWidth</code></title>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+        
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <script>
+        // This example displays a marker at the center of Australia.
+        // When the user clicks the marker, an info window opens.
+        // The maximum width of the info window is set to 200 pixels.
+
+        function initMap() {
+
+            var uluru = {
+                lat: 59.9226004,
+                lng: 10.7519892
+            };
+
+            // sette punkter
+            var kontrast = {
+                lat: 59.922473,
+                lng: 10.751005
+            };
+            var dognvill = {
+                lat: 59.9217100,
+                lng: 10.7516682
+            };
+            var luckyBird = {
+                lat: 59.9226004,
+                lng: 10.7519892
+            };
+            var hitchhiker = {
+                lat: 59.922339,
+                lng: 10.752095
+            };
+            var mapCenter = {
+                lat: 59.922524,
+                lng: 10.751749
+            };
+
+
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 18,
+                center: uluru
+            });
+
+            // Sette Strings
+            var dognvillString = '<div id="content">' +
+                '<div id="siteNotice"></div> <h1 id="firstHeading" class="firstHeading">Dognvill</h1> <div id="bodyContent">' +
+                '<p> Velkommen til Døgnvill!</p>' +
+                '</div>' +
+                '</div>';
+
+
+            var luckyString = '<div id="content">' +
+                '<div id="siteNotice"></div> <h1 id="firstHeading" class="firstHeading">Lucky</h1> <div id="bodyContent">' +
+                '<p> Gira på litt lucky??</p>' +
+                '</div>' +
+                '</div>';
+
+
+            var hitchhikerString = '<div id="content">' +
+                '<div id="siteNotice"></div> <h1 id="firstHeading" class="firstHeading">Hitchhiker</h1> <div id="bodyContent">' +
+                '<p> Haikern, god mat! </p>' +
+                '</div>' +
+                '</div>';
+
+            var kontrastString = '<div id="content">' +
+                '<div id="siteNotice"></div> <h1 id="firstHeading" class="firstHeading">Kontrast</h1> <div id="bodyContent">' +
+                '<p>Kontraster i matverden</p>' +
+                '</div>' +
+                '</div>';
+
+            // sette vinduer
+            var luckyInfowindow = new google.maps.InfoWindow({
+                content: luckyString,
+                maxWidth: 300
+            });
+
+            var dognvillInfowindow = new google.maps.InfoWindow({
+                content: dognvillString,
+                maxWidth: 300
+            });
+
+            var hitchhikerInfowindow = new google.maps.InfoWindow({
+                content: hitchhikerString,
+                maxWidth: 300
+            });
+
+            var kontrastInfowindow = new google.maps.InfoWindow({
+                content: kontrastString,
+                maxWidth: 300
+            });
+
+
+            // sette markører
+
+            var kontrastMark = new google.maps.Marker({
+                position: kontrast,
+                map: map
+            });
+            var dognvillMark = new google.maps.Marker({
+                position: dognvill,
+                map: map
+            });
+            var hitchhikerMark = new google.maps.Marker({
+                position: hitchhiker,
+                map: map
+            });
+            var luckyBirdMark = new google.maps.Marker({
+                position: luckyBird,
+                map: map
+            });
+
+            // ActionListeners
+            luckyBirdMark.addListener('click', function() {
+                luckyInfowindow.open(map, luckyBirdMark);
+            });
+
+            dognvillMark.addListener('click', function() {
+                dognvillInfowindow.open(map, dognvillMark);
+            });
+
+            hitchhikerMark.addListener('click', function() {
+                hitchhikerInfowindow.open(map, hitchhikerMark);
+            });
+
+            kontrastMark.addListener('click', function() {
+                kontrastInfowindow.open(map, kontrastMark);
+            });
+        }
+
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDom7SHx9ZtEf7dQKyTbbvGjEjkG-aTc6o&callback=initMap">
+    </script>
+</body>
+
+</html>

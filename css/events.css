@@ -9,7 +9,7 @@ a {
 }
 
 html {
-    overflow: hidden;
+    /*overflow: hidden; */
 }
 
 body {
@@ -49,14 +49,9 @@ body {
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px
-}
-
-#left-inner-box,
-#right-inner-box {
+    grid-column-gap: 10px;
     background-color: rgb(250, 250, 250);
     border-radius: 10px;
-    overflow-y: auto;
 }
 
 /* MENUBAR */
@@ -142,37 +137,82 @@ body {
     background-color: rgb(169, 169, 169);
 }
 
-/* CARDS */
+/* EVENT-CARDS */
 
-.cards {
+.event-card *{
+    position: relative;
+}
+
+.event-card {
+    top: 0px;
+    width: 280px;
+    list-style-type: none;
+}
+
+li{
+    float: left;
+}
+
+ul{
+    padding-bottom: 20px;
+    background-color: rgb(240,240,240);
+    height: 500px;
+}
+
+.readMoreBtn{
+    top: -35px;
+    right: 20px;
+    text-align: right;
+    color: rgb(0, 63, 100);
+}
+
+.card-date, .card-month {
+    text-align: center;
+    color: rgb(100,100,100);
+    text-indent: -40px;
+}
+
+.card-date{
+    font-size: 3.5em;
+}
+
+.card-month{
+    top: -35px;
+}
+
+.card-img {
+    width: 280px;
+    left: -40px;
+    top: -35px;
+}
+
+.card-title {
+    width: 270px;
+    left: -35px;
+    top: -35px;
+}
+
+.card-description {
+    position: relative;
+    left: -35px;
+    top: -35px;
+}
+
+/*.cards {
     background-color: rgb(240, 240, 240);
     width: 100%;
     height: 220px;
     margin-bottom: 20px;
     outline: 1px solid;
     outline-color: rgb(220, 220, 220);
-}
+} */
 
-.card-img {
-    height: 220px;
-    width: 54%;
-}
-
-.card-title {
-    position: relative;
-    font-family: sans-serif;
-    top: -230px;
-    width: 40%;
-    left: 58%;
-    color: rgb(0,63,100);
-}
-
-.card-stars {
+/* .card-stars {
     position: relative;
     width: 100px;
     top: -245px;
     left: 58%;
-}
+} */
 
 
 /* .card-rating {
@@ -183,13 +223,7 @@ body {
     left: 60%;
 } */
 
-.card-description {
-    font-family: sans-serif;
-    position: relative;
-    top: -259px;
-    left: 58%;
-    width: 40%;
-}
+
 
 
 /* MAP */
@@ -197,9 +231,9 @@ body {
 #map {
     height: 100%;
     position: relative;
+    
 }
 
-.firstHeading {
-    color: rgb(0, 63, 100);
-}
+
+
 
