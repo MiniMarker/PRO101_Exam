@@ -49,7 +49,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 
         <div id="menubar">
             <div id="buttons">
-                <a href="index.html">
+                <a href="hotell.php">
                     <div class="button" id="hotel-button">
                         <img id="hotel-img" src="img/icons/hotel.png">
                         <p>Hoteller</p>
@@ -70,21 +70,21 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                     </div>
                 </a>
 
-                <a href="index.html">
+                <a href="bar.php">
                     <div class="button" id="beer-button">
                         <img src="img/icons/drink-beer-jar.png">
                         <p>Barer</p>
                     </div>
                 </a>
 
-                <a href="index.html">
+                <a href="event.php">
                     <div class="button" id="ticket-button">
                         <img src="img/icons/tickets.png">
                         <p>Eventer</p>
                     </div>
                 </a>
 
-                <a href="index.html">
+                <a href="aktiviteter.php">
                     <div class="button" id="activity-button">
                         <img src="img/icons/activity.png">
                         <p>Aktiviteter</p>
