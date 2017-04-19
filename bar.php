@@ -42,6 +42,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 
         <img onclick="showDiv()" id="menu-botton" src="img/menu.png">
         <img onclick="showDiv()" id="close-menu-button" src="img/menu2.png">
+        <a href="index.html"><img id="home-button" src="img/home.png"></a>
 
         <div id="page-title">
             <h1>Barer</h1>

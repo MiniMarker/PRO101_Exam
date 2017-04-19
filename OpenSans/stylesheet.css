@@ -8,7 +8,7 @@ p{
     font-family: 'open_sansregular';
 }
 
-.button p, #undertitle{
+.button p, #undertitle, .card-month{
     font-family: 'open_sanssemibold';
 }
 

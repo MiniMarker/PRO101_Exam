@@ -50,18 +50,22 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(250, 250, 250) !important;
     border-radius: 10px;
 }
 
 /* MENUBAR */
 
-#menu-botton, #close-menu-button {
+#menu-botton, #close-menu-button, #home-button {
     position: absolute;
     width: 70px;
     left: 20px;
     top: 35px;
     z-index: 2;
+}
+
+#home-button{
+    left: 100px;
 }
 
 #close-menu-button{
