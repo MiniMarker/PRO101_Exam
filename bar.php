@@ -1,12 +1,12 @@
 <?php 
 require "php/db-connection.php";
 
-$statement = $connection -> prepare('SELECT * FROM resturant');
+$statement = $connection -> prepare('SELECT * FROM barer');
 
 $statement -> execute();
 
 while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
-    $resturants[] = $row;
+    $bars[] = $row;
 }
 
 ?>
@@ -32,7 +32,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 
     </script>
 
-    <title>Resturanter</title>
+    <title>Bar</title>
 
 </head>
 
@@ -44,12 +44,12 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
         <img onclick="showDiv()" id="close-menu-button" src="img/menu2.png">
 
         <div id="page-title">
-            <h1>Resturanter</h1>
+            <h1>Barer</h1>
         </div>
 
         <div id="menubar">
             <div id="buttons">
-                <a href="index.html">
+                <a href="hotell.php">
                     <div class="button" id="hotel-button">
                         <img id="hotel-img" src="img/icons/hotel.png">
                         <p>Hoteller</p>
@@ -70,21 +70,21 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                     </div>
                 </a>
 
-                <a href="index.html">
+                <a href="bar.php">
                     <div class="button" id="beer-button">
                         <img src="img/icons/drink-beer-jar.png">
                         <p>Barer</p>
                     </div>
                 </a>
 
-                <a href="index.html">
+                <a href="event.php">
                     <div class="button" id="ticket-button">
                         <img src="img/icons/tickets.png">
                         <p>Eventer</p>
                     </div>
                 </a>
 
-                <a href="index.html">
+                <a href="aktiviteter.php">
                     <div class="button" id="activity-button">
                         <img src="img/icons/activity.png">
                         <p>Aktiviteter</p>
@@ -95,37 +95,37 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
         <div id="outer-box">
             <div id="left-inner-box">
 
-                <?php foreach($resturants as $resturant) { ?>
+                <?php foreach($bars as $bar) { ?>
 
                 <div class="cards">
-                    <a href="<?= $resturant["link-path"] ?>">
-                        <img class="card-img" src="<?= $resturant["img_path"] ?>">
+                    <a href="<?= $bar["link-path"] ?>">
+                        <img class="card-img" src="<?= $bar["img_path"] ?>">
                         
                         <h1 class="card-title">
-                            <?= $resturant["name"] ?>
+                            <?= $bar["name"] ?>
                         </h1>
                     </a>
 
-                    <?php if ($resturant["rating"] == 5) { ?>
+                    <?php if ($bar["rating"] == 5) { ?>
                     <img class="card-stars" src="img/stars/5-stars.png">
 
-                    <?php } elseif ($resturant["rating"] == 4) { ?>
+                    <?php } elseif ($bar["rating"] == 4) { ?>
                     <img class="card-stars" src="img/stars/4-stars.png">
 
-                    <?php } elseif ($resturant["rating"] == 3) { ?>
+                    <?php } elseif ($bar["rating"] == 3) { ?>
                     <img class="card-stars" src="img/stars/3-stars.png">
 
-                    <?php } elseif ($resturant["rating"] == 2) { ?>
+                    <?php } elseif ($bar["rating"] == 2) { ?>
                     <img class="card-stars" src="img/stars/2-stars.png">
 
-                    <?php } elseif ($resturant["rating"] == 1) { ?>
+                    <?php } elseif ($bar["rating"] == 1) { ?>
                     <img class="card-stars" src="img/stars/1-star.png">
 
                     <?php } ?>
 
                     <div class="card-description">
                         <p>
-                            <?= $resturant["description"] ?>
+                            <?= $bar["description"] ?>
                         </p>
                     </div>
                 </div>
