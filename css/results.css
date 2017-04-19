@@ -61,12 +61,16 @@ body {
 
 /* MENUBAR */
 
-#menu-botton, #close-menu-button {
+#menu-botton, #close-menu-button, #home-button {
     position: absolute;
     width: 70px;
     left: 20px;
     top: 35px;
     z-index: 2;
+}
+
+#home-button{
+    left: 100px;
 }
 
 #close-menu-button{
