@@ -6,7 +6,7 @@ $statement = $connection -> prepare('SELECT * FROM cafe');
 $statement -> execute();
 
 while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
-    $resturants[] = $row;
+    $cafes[] = $row;
 }
 
 ?>
@@ -49,14 +49,14 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 
         <div id="menubar">
             <div id="buttons">
-                <a href="index.html">
+                <a href="hotell.php">
                     <div class="button" id="hotel-button">
                         <img id="hotel-img" src="img/icons/hotel.png">
                         <p>Hoteller</p>
                     </div>
                 </a>
 
-                <a href="index.html">
+                <a href="cafes.php">
                     <div class="button" id="cafe-button">
                         <img src="img/icons/coffee-cup.png">
                         <p>Café</p>
@@ -70,21 +70,21 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                     </div>
                 </a>
 
-                <a href="index.html">
+                <a href="bar.php">
                     <div class="button" id="beer-button">
                         <img src="img/icons/drink-beer-jar.png">
                         <p>Barer</p>
                     </div>
                 </a>
 
-                <a href="index.html">
+                <a href="event.php">
                     <div class="button" id="ticket-button">
                         <img src="img/icons/tickets.png">
                         <p>Eventer</p>
                     </div>
                 </a>
 
-                <a href="index.html">
+                <a href="aktiviteter.php">
                     <div class="button" id="activity-button">
                         <img src="img/icons/activity.png">
                         <p>Aktiviteter</p>
@@ -95,37 +95,37 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
         <div id="outer-box">
             <div id="left-inner-box">
 
-                <?php foreach($resturants as $resturant) { ?>
+                <?php foreach($cafes as $cafe) { ?>
 
                 <div class="cards">
-                    <a href="<?= $resturant["link-path"] ?>">
-                        <img class="card-img" src="<?= $resturant["img_path"] ?>">
+                    <a href="<?= $cafe["link-path"] ?>">
+                        <img class="card-img" src="<?= $cafe["img_path"] ?>">
                         
                         <h1 class="card-title">
-                            <?= $resturant["name"] ?>
+                            <?= $cafe["name"] ?>
                         </h1>
                     </a>
 
-                    <?php if ($resturant["rating"] == 5) { ?>
+                    <?php if ($cafe["rating"] == 5) { ?>
                     <img class="card-stars" src="img/stars/5-stars.png">
 
-                    <?php } elseif ($resturant["rating"] == 4) { ?>
+                    <?php } elseif ($cafe["rating"] == 4) { ?>
                     <img class="card-stars" src="img/stars/4-stars.png">
 
-                    <?php } elseif ($resturant["rating"] == 3) { ?>
+                    <?php } elseif ($cafe["rating"] == 3) { ?>
                     <img class="card-stars" src="img/stars/3-stars.png">
 
-                    <?php } elseif ($resturant["rating"] == 2) { ?>
+                    <?php } elseif ($cafe["rating"] == 2) { ?>
                     <img class="card-stars" src="img/stars/2-stars.png">
 
-                    <?php } elseif ($resturant["rating"] == 1) { ?>
+                    <?php } elseif ($cafe["rating"] == 1) { ?>
                     <img class="card-stars" src="img/stars/1-star.png">
 
                     <?php } ?>
 
                     <div class="card-description">
                         <p>
-                            <?= $resturant["description"] ?>
+                            <?= $cafe["description"] ?>
                         </p>
                     </div>
                 </div>
