@@ -15,4 +15,4 @@ $password = "HOTfcrrFNe0E";
 $name = "marchr16_wordpress";
 $host = "tek.westerdals.no";
 
-$connection = new PDO("mysql:host={$host};dbname={$name};port={$port}", $username, $password);
+$connection = new PDO("mysql:host={$host};dbname={$name};port={$port};charset=utf8", $username, $password);
