@@ -96,7 +96,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                 <?php foreach($resturants as $resturant) { ?>
 
                 <div class="cards">
-                    <a href="<?= $resturant["link-path"] ?>">
+                    <a href="<?= $resturant[" link-path "] ?>">
                         <img class="card-img" src="<?= $resturant["img_path"] ?>">
                         
                         <h1 class="card-title">
@@ -136,9 +136,8 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
             </div>
         </div>
     </div>
-    
+
     <script>
-        
         // GOOGLE MAPS
         function initMap() {
 
@@ -163,12 +162,47 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                 lat: 59.922524,
                 lng: 10.751749
             };
-            
-            
+
+            // sette markøren
+            var icons = {
+                pin: {
+                    icon: 'http://bildr.no/image/M2F3WTRI.jpeg'
+                }
+            }
+
+
             // Init kart
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 18,
-                center: hitchhiker
+                center: mapCenter,
+                styles: [{
+                        "featureType": "administrative.land_parcel",
+                        "elementType": "labels",
+                        "stylers": [{
+                            "visibility": "off"
+                        }]
+                    },
+                    {
+                        "featureType": "poi.business",
+                        "stylers": [{
+                            "visibility": "off"
+                        }]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "labels.text",
+                        "stylers": [{
+                            "visibility": "off"
+                        }]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "labels",
+                        "stylers": [{
+                            "visibility": "off"
+                        }]
+                    }
+                ]
             });
 
             // Tekst i infobokser
@@ -202,6 +236,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
             var luckyInfowindow = new google.maps.InfoWindow({
                 content: luckyString,
                 maxWidth: 300
+
             });
 
             var dognvillInfowindow = new google.maps.InfoWindow({
@@ -223,7 +258,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
             // sette markører på kartet
             var kontrastMark = new google.maps.Marker({
                 position: kontrast,
-                map: map
+                map: map,
             });
             var dognvillMark = new google.maps.Marker({
                 position: dognvill,
