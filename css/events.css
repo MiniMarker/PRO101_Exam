@@ -118,27 +118,77 @@ body {
 }
 
 #hotel-button {
-    background-color: rgb(255, 112, 97);
+    background-color: hsl(6, 100%, 69%);
+    transition-duration: 0.4s;
 }
+
+
+#hotel-button:hover {
+    background-color: hsl(6, 100%, 64%);
+}
+
+
+
 
 #cafe-button {
-    background-color: rgb(125, 195, 152);
+    background-color: hsl(143, 37%, 63%);
+    transition-duration: 0.4s;
 }
+
+#cafe-button:hover {
+    background-color: hsl(143, 37%, 58%);
+}
+
+
+
 
 #resturant-button {
-    background-color: rgb(255, 208, 102);
+    background-color: hsl(42, 100%, 70%);
+        transition-duration: 0.4s;
+
 }
+
+#resturant-button:hover {
+    background-color: hsl(42, 100%, 65%);
+}
+
+
 
 #beer-button {
-    background-color: rgb(97, 175, 200);
+    background-color: hsl(195, 48%, 58%);
+    transition-duration: 0.4s;
+
 }
+
+#beer-button:hover {
+    background-color: hsl(195, 48%, 53%);
+}
+
+
+
 
 #ticket-button {
-    background-color: rgb(120, 84, 128);
+    background-color: hsl(289, 21%, 42%);   transition-duration: 0.4s;
+
 }
 
+#ticket-button:hover {
+    background-color: hsl(289, 21%, 37%);    
+}
+
+
+
+
 #activity-button {
-    background-color: rgb(169, 169, 169);
+    background-color: hsl(0, 0%, 66%);
+    transition-duration: 0.4s;
+
+}
+
+#activity-button:hover {
+    background-color:hsl(0,0%,61%);
+
+        
 }
 
 /* EVENT-CARDS */
