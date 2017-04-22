@@ -274,21 +274,43 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
             });
 
             // ActionListeners
-            luckyBirdMark.addListener('click', function() {
+            luckyBirdMark.addListener('mouseover', function() {
                 luckyInfowindow.open(map, luckyBirdMark);
             });
+            
+            luckyBirdMark.addListener('mouseout', function() {
+                luckyInfowindow.close(map, luckyBirdMark);
+            });
+            
 
-            dognvillMark.addListener('click', function() {
+            dognvillMark.addListener('mouseover', function() {
                 dognvillInfowindow.open(map, dognvillMark);
             });
+            
+            dognvillMark.addListener('mouseout', function() {
+                dognvillInfowindow.close(map, dognvillMark);
+            });
+            
 
-            hitchhikerMark.addListener('click', function() {
+            hitchhikerMark.addListener('mouseover', function() {
                 hitchhikerInfowindow.open(map, hitchhikerMark);
             });
+            
+            hitchhikerMark.addListener('mouseout', function() {
+                hitchhikerInfowindow.close(map, hitchhikerMark);
+            });
+            
 
-            kontrastMark.addListener('click', function() {
+            kontrastMark.addListener('mouseover', function() {
                 kontrastInfowindow.open(map, kontrastMark);
             });
+            
+            kontrastMark.addListener('mouseout', function() {
+                kontrastInfowindow.close(map, kontrastMark);
+            });
+            
+            //object.addEventListener("mouseover", myScript);
+            
         }
 
     </script>

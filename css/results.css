@@ -67,6 +67,7 @@ body {
     left: 20px;
     top: 35px;
     z-index: 2;
+    cursor: pointer;
 }
 
 #home-button{
