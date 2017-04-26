@@ -1,5 +1,6 @@
 <?php 
 require "php/db-connection.php";
+require "php/result-header.php";
 
 $statement = $connection -> prepare('SELECT * FROM hotel');
 
@@ -15,25 +16,9 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- CSS -->
-    <link href="css/results.css" type="text/css" rel="stylesheet">
-    <link href="OpenSans/stylesheet.css" type="text/css" rel="stylesheet">
-
-    <!-- JAVASCRPT -->
-    <script src="js/script.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDom7SHx9ZtEf7dQKyTbbvGjEjkG-aTc6o&callback=initMap">
-
-
     </script>
-
     <title>Hotell</title>
-
 </head>
 
 <body>
@@ -42,7 +27,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 
         <img onclick="showDiv()" id="menu-botton" src="img/menu.png">
         <img onclick="showDiv()" id="close-menu-button" src="img/menu2.png">
-        <a href="index.html"><img id="home-button" src="img/home.png"></a>
+        <a href="index.php"><img id="home-button" src="img/home.png"></a>
         
         <div id="page-title">
             <h1>Hoteller</h1>

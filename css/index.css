@@ -36,6 +36,7 @@ a {
     height: 65px;
     background-color: rgba(250,250,250,0.8);
     border-radius: 10px;
+    display: block;
 }
 
 #langInfo p{
