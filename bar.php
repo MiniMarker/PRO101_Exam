@@ -21,6 +21,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
     </script>
 
     <title>Bar</title>
+    <link href="css/bar.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
@@ -95,8 +96,8 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                     </a>
 
                     <div class="card-olpris">
-                        <p>
-                            <?= $bar["billigsteOl"] ?>
+                        <p class="bold">
+                            Billigste øl: <?= $bar["billigsteOl"] ?> kr
                         </p>
                     </div>
 

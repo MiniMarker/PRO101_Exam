@@ -215,6 +215,16 @@ body {
     left: 58%;
 }
 
+.card-olpris{
+    background-color: hsla(143, 37%, 63%, 0.5);
+    border-radius: 10px;
+    width: 140px;
+    position: relative;
+    top: -245px;
+    left: 57.7%;
+    text-align: center;
+}
+
 
 /* .card-rating {
     position: relative;
@@ -227,7 +237,7 @@ body {
 .card-description {
     font-family: sans-serif;
     position: relative;
-    top: -259px;
+    top: -253px;
     left: 58%;
     width: 40%;
 }
