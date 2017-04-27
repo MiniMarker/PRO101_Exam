@@ -12,15 +12,9 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 
 ?>
 
-<!DOCTYPE html>
-<html>
-
 <head>
-    <script src="js/aktiviteter-map.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDom7SHx9ZtEf7dQKyTbbvGjEjkG-aTc6o&callback=initMap">
-    </script>
-
     <title>Aktiviteter</title>
+    <script src="js/aktiviteter-map.js"></script>
 </head>
 
 <body>

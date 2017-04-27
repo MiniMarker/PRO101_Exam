@@ -1,12 +1,12 @@
 
 function initMap() {
     var locations = [
-        ['Christiania Minigolf', 59.9185678, 10.7588000, 6], // 10.7561222 | 26778
-        ['Megazone', 59.9162511, 10.7494700, 5],
-        ['Oslo bar og bowling', 59.9158823, 10.7507500, 4],
-        ['Vulkan klatresenter', 59.9229466, 10.7520000, 3],
-        ['Grunerhagen Ballplass', 59.9229935, 10.7550900, 2],
-        ['SIO Helse Vulkan', 59.9231517, 10.7522093, 1]
+        ['<p>Christiania Minigolf</p>', 59.9185678, 10.7588000, 6],
+        ['<p>Megazone</p>', 59.9162511, 10.7494700, 5],
+        ['<p>Oslo bar og bowling</p>', 59.9158823, 10.7507500, 4],
+        ['<p>Vulkan klatresenter</p>', 59.9229466, 10.7520000, 3],
+        ['<p>Grunerhagen Ballplass</p>', 59.9229935, 10.7550900, 2],
+        ['<p>SIO Helse Vulkan</p>', 59.9231517, 10.7522093, 1]
     ];
 
     window.map = new google.maps.Map(document.getElementById('map'), {

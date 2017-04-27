@@ -1,12 +1,36 @@
 
 function initMap() {
     var locations = [
-        ['<p>Kontrast</p>', 59.922473, 10.751005, 6],
-        ['<p>Døgnvill</p>', 59.9217100, 10.7516682, 5],
-        ['<p>Lucky Bird</p>', 59.9226004, 10.7519892, 4],
-        ['<p>Hitchhiker</p>', 59.922339, 10.752095, 3],
-        ['<p>Asian Street Food</p>', 59.916983, 10.7513519, 2],
-        ['<p>Villa Paradiso</p>', 59.923535, 10.755316, 1]
+        ['<div id="content"> <div id="siteNotice"></div>' + 
+         '<h2 id="firstHeading" class="firstHeading">Kontrast</h2>' + 
+         '<div id="bodyContent">' +
+         '<p>Maridalsveien 15a, 0175 Oslo</p></div></div>', 
+         59.922473, 10.751005, 6],
+        
+        ['<div id="content"> <div id="siteNotice"></div>' + 
+         '<h2 id="firstHeading" class="firstHeading">Døgnvill</h2>' + 
+         '<div id="bodyContent">' +
+         '<p>Vulkan 12, 0178 Oslo</p></div></div>' , 59.9217100, 10.7516682, 5],
+        
+        ['<div id="content"> <div id="siteNotice"></div>' + 
+         '<h2 id="firstHeading" class="firstHeading">Lucky Bird</h2>' + 
+         '<div id="bodyContent">' +
+         '<p>Vulkan 7, 0175 Oslo</p></div></div>' , 59.9226004, 10.7519892, 4],
+        
+        ['<div id="content"> <div id="siteNotice"></div>' + 
+         '<h2 id="firstHeading" class="firstHeading">Hitchhiker</h2>' + 
+         '<div id="bodyContent">' +
+         '<p>Vulkan 5, 0178 Oslo</p></div></div>' , 59.922339, 10.752095, 3],
+        
+        ['<div id="content"> <div id="siteNotice"></div>' + 
+         '<h2 id="firstHeading" class="firstHeading">Asian Street Food</h2>' + 
+         '<div id="bodyContent">' +
+         '<p>Torggata 29, 0183 Oslo</p></div></div>' , 59.916983, 10.7534519, 2],
+        
+        ['<div id="content"> <div id="siteNotice"></div>' + 
+         '<h2 id="firstHeading" class="firstHeading">Villa Paradiso</h2>' + 
+         '<div id="bodyContent">' +
+         '<p>Olaf Ryes plass 8, 0552 Oslo</p></div></div>', 59.923535, 10.757500, 1]
     ];
 
     window.map = new google.maps.Map(document.getElementById('map'), {

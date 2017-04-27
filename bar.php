@@ -11,17 +11,9 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 }
 
 ?>
-
-<!DOCTYPE html>
-<html>
-
 <head>
-    <script src="js/bar-map.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDom7SHx9ZtEf7dQKyTbbvGjEjkG-aTc6o&callback=initMap">
-    </script>
-
     <title>Bar</title>
-    <link href="css/bar.css" type="text/css" rel="stylesheet">
+    <script src="js/bar-map.js"></script>
 </head>
 
 <body>
@@ -87,13 +79,11 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                 <?php foreach($bars as $bar) { ?>
 
                 <div class="cards">
-                    <a href="<?= $bar["link-path"] ?>">
                         <img class="card-img" src="<?= $bar["img_path"] ?>">
                         
                         <h1 class="card-title">
                             <?= $bar["name"] ?>
                         </h1>
-                    </a>
 
                     <div class="card-olpris">
                         <p class="bold">
@@ -106,6 +96,12 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                             <?= $bar["description"] ?>
                         </p>
                     </div>
+                    
+                    <a href="<?= $bar["link-path"] ?>"> 
+                        <p class="card-link">
+                            Besøk siden
+                        </p>
+                    </a>
                 </div>
 
                 <?php } ?>

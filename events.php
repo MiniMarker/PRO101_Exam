@@ -11,8 +11,6 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 
 ?>
 
-<!DOCTYPE html>
-<html>
 
 <head>
     <meta charset="utf-8">

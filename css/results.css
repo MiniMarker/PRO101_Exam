@@ -206,6 +206,7 @@ body {
     width: 40%;
     left: 58%;
     color: rgb(0, 63, 100);
+    font-size: 1.9em;
 }
 
 .card-stars {
@@ -235,11 +236,17 @@ body {
 } */
 
 .card-description {
-    font-family: sans-serif;
     position: relative;
     top: -253px;
     left: 58%;
     width: 40%;
+}
+.card-link{
+    position: relative;
+    bottom: 250px;
+    left: 58%;
+    width: 40%;
+    text-align: right;
 }
 
 
