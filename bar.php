@@ -125,6 +125,6 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
             </div>
         </div>
     </div>
-</body>
-
-</html>
+<?php 
+    require "php/footer.php";
+?>
