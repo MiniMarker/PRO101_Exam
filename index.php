@@ -7,7 +7,9 @@ require "php/index-header.php";
         <img id="background" src="img/background.png">
         
         <div id="bookmark">
-            <img src="img/bookmark.png">
+            <a href="http://westerdals.no">
+                <img src="img/bookmark.png">
+            </a>
         </div>
         
         <div id="langInfo">
@@ -72,6 +74,6 @@ require "php/index-header.php";
 
         <!-- <img id="languageFlag" src="img/flag/english2.png"> -->
     </div>
-
-</body>
-</html>
+<?php 
+    require "php/footer.php";
+?>

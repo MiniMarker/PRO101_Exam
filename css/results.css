@@ -59,9 +59,12 @@ body {
     overflow-y: auto;
 }
 
+
 /* MENUBAR */
 
-#menu-botton, #close-menu-button, #home-button {
+#menu-botton,
+#close-menu-button,
+#home-button {
     position: absolute;
     width: 70px;
     left: 20px;
@@ -70,15 +73,15 @@ body {
     cursor: pointer;
 }
 
-#home-button{
+#home-button {
     left: 100px;
 }
 
-#close-menu-button{
+#close-menu-button {
     display: none;
 }
 
-#menubar{
+#menubar {
     position: absolute;
     width: 100%;
     height: 150px;
@@ -88,6 +91,8 @@ body {
     opacity: 1;
     transition: top .5s ease;
 }
+
+/* BUTTONS */
 
 #buttons {
     display: grid;
@@ -128,13 +133,9 @@ body {
     transition-duration: 0.4s;
 }
 
-
 #hotel-button:hover {
-    background-color: hsl(6, 100%, 64%);
+    background-color: hsl(6, 100%, 63%);
 }
-
-
-
 
 #cafe-button {
     background-color: hsl(143, 37%, 63%);
@@ -142,60 +143,45 @@ body {
 }
 
 #cafe-button:hover {
-    background-color: hsl(143, 37%, 58%);
+    background-color: hsl(143, 37%, 57%);
 }
-
-
-
 
 #resturant-button {
     background-color: hsl(42, 100%, 70%);
-        transition-duration: 0.4s;
-
+    transition-duration: 0.4s;
 }
 
 #resturant-button:hover {
-    background-color: hsl(42, 100%, 65%);
+    background-color: hsl(42, 100%, 64%);
 }
-
-
 
 #beer-button {
     background-color: hsl(195, 48%, 58%);
     transition-duration: 0.4s;
-
 }
 
 #beer-button:hover {
-    background-color: hsl(195, 48%, 53%);
+    background-color: hsl(195, 48%, 52%);
 }
 
-
-
-
 #ticket-button {
-    background-color: hsl(289, 21%, 42%);   transition-duration: 0.4s;
-
+    background-color: hsl(289, 21%, 42%);
+    transition-duration: 0.4s;
 }
 
 #ticket-button:hover {
-    background-color: hsl(289, 21%, 37%);    
+    background-color: hsl(289, 21%, 36%);
 }
-
-
-
 
 #activity-button {
     background-color: hsl(0, 0%, 66%);
     transition-duration: 0.4s;
-
 }
 
 #activity-button:hover {
-    background-color:hsl(0,0%,61%);
-
-        
+    background-color: hsl(0, 0%, 60%);
 }
+
 
 /* CARDS */
 
@@ -219,7 +205,7 @@ body {
     top: -230px;
     width: 40%;
     left: 58%;
-    color: rgb(0,63,100);
+    color: rgb(0, 63, 100);
 }
 
 .card-stars {
@@ -258,4 +244,3 @@ body {
 .firstHeading {
     color: rgb(0, 63, 100);
 }
-

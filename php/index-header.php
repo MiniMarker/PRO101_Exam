@@ -13,7 +13,6 @@
     
     <!-- JAVASCRIPT -->
     <script src="js/script.js"></script>
-
-
+    
     <title>Gruppe 17</title>
 </head>
