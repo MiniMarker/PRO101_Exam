@@ -1,12 +1,10 @@
 
 function initMap() {
     var locations = [
-        ['<p>Kontrast</p>', 59.922473, 10.751005, 6],
-        ['<p>Døgnvill</p>', 59.9217100, 10.7516682, 5],
-        ['<p>Lucky Bird</p>', 59.9226004, 10.7519892, 4],
-        ['<p>Hitchhiker</p>', 59.922339, 10.752095, 3],
-        ['<p>Asian Street Food</p>', 59.916983, 10.7513519, 2],
-        ['<p>Villa Paradiso</p>', 59.923535, 10.755316, 1]
+        ['<p>Anker Hotell</p>', 59.917714, 10.75591, 4],
+        ['<p>Thon Hotell Spectrum</p>', 59.913985, 10.753463, 3],
+        ['<p>Scandic Vulkan</p>', 59.9222276, 10.7488562, 2],
+        ['<p>PS: Hotell Vulkan</p>', 59.9221828, 10.7490982, 1]
     ];
 
     window.map = new google.maps.Map(document.getElementById('map'), {
@@ -42,7 +40,7 @@ function initMap() {
     map.fitBounds(bounds);
 
     var listener = google.maps.event.addListener(map, "idle", function () {
-        map.setZoom(16);
+        map.setZoom(15);
         google.maps.event.removeListener(listener);
     });
 }

@@ -16,6 +16,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 <html>
 
 <head>
+    <script src="js/hotell-map.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDom7SHx9ZtEf7dQKyTbbvGjEjkG-aTc6o&callback=initMap">
     </script>
     <title>Hotell</title>
@@ -95,16 +96,16 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                     <?php if ($hotel["rating"] == 5) { ?>
                     <img class="card-stars" src="img/stars/5-stars.png">
 
-                    <?php } elseif ($resturant["rating"] == 4) { ?>
+                    <?php } elseif ($hotel["rating"] == 4) { ?>
                     <img class="card-stars" src="img/stars/4-stars.png">
 
-                    <?php } elseif ($resturant["rating"] == 3) { ?>
+                    <?php } elseif ($hotel["rating"] == 3) { ?>
                     <img class="card-stars" src="img/stars/3-stars.png">
 
-                    <?php } elseif ($resturant["rating"] == 2) { ?>
+                    <?php } elseif ($hotel["rating"] == 2) { ?>
                     <img class="card-stars" src="img/stars/2-stars.png">
 
-                    <?php } elseif ($resturant["rating"] == 1) { ?>
+                    <?php } elseif ($hotel["rating"] == 1) { ?>
                     <img class="card-stars" src="img/stars/1-star.png">
 
                     <?php } ?>

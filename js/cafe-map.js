@@ -1,12 +1,12 @@
 
 function initMap() {
     var locations = [
-        ['<p>Kontrast</p>', 59.922473, 10.751005, 6],
-        ['<p>Døgnvill</p>', 59.9217100, 10.7516682, 5],
-        ['<p>Lucky Bird</p>', 59.9226004, 10.7519892, 4],
-        ['<p>Hitchhiker</p>', 59.922339, 10.752095, 3],
-        ['<p>Asian Street Food</p>', 59.916983, 10.7513519, 2],
-        ['<p>Villa Paradiso</p>', 59.923535, 10.755316, 1]
+        ['<p>Tim Wendelboe</p>', 59.9233709, 10.755650, 6],
+        ['<p>Cafe Sara</p>', 59.9176068,10.7541500, 5],
+        ['<p>Espresso House Nordre Gate</p>', 59.9211606, 10.7575700, 4],
+        ['<p>La Crêpe</p>', 59.9225697, 10.7516500, 3],
+        ['<p>Godt Brød</p>', 59.9239878, 10.7589800, 2],
+        ['<p>Kaffebrenneriet</p>', 59.923489, 10.758820, 1]
     ];
 
     window.map = new google.maps.Map(document.getElementById('map'), {
