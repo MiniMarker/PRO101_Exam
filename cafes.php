@@ -14,7 +14,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 
 
 <head>
-    <title>Caféer</title>
+    <title>Caféer</title> 
     <script src="js/cafe-map.js"></script>
 </head>
 

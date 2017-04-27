@@ -1,37 +1,20 @@
 <?php 
 require "php/db-connection.php";
+require "php/result-header.php";
 
 $statement = $connection -> prepare('SELECT * FROM event');
 
 $statement -> execute();
 
 while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
-    $resturants[] = $row;
+    $events[] = $row;
 }
 
 ?>
 
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- CSS -->
-    <link href="css/events.css" type="text/css" rel="stylesheet">
-    <link href="OpenSans/stylesheet.css" type="text/css" rel="stylesheet">
-
-    <!-- JAVASCRPT -->
-    <script src="js/script.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDom7SHx9ZtEf7dQKyTbbvGjEjkG-aTc6o&callback=initMap">
-
-
-    </script>
-
-    <title>Events</title>
-
+    <title>Hotell</title>
+    <script src="js/hotell-map.js"></script>
 </head>
 
 <body>
@@ -43,7 +26,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
         <a href="index.php"><img id="home-button" src="img/home.png"></a>
         
         <div id="page-title">
-            <h1>Events</h1>
+            <h1>Hoteller</h1>
         </div>
 
         <div id="menubar">
@@ -92,36 +75,32 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
             </div>
         </div>
         <div id="outer-box">
-            <li class="event-card">
+            <div id="left-inner-box">
 
-                <?php foreach($resturants as $resturant) { ?>
-                <ul>
-                    <h1 class="card-date">
-                        <?= $resturant["date"] ?>
-                    </h1>
-                    <h2 class="card-month">
-                        <?= $resturant["month"] ?>
-                    </h2>
+                <?php foreach($events as $event) { ?>
 
-                    <h1 class="card-title">
-                        <?= $resturant["name"] ?>
-                    </h1>
-
-                    <img class="card-img" src="<?=$resturant["img_path"] ?>">
+                <div class="cards">
+                    <a href="<?= $event["link-path"] ?>">
+                        <img class="card-img" src="<?= $event["img_path"] ?>">
                         
-                    <p class="card-description">
-                        <?= $resturant["description"] ?>
-                    </p>
-                    
-                    <a href="<?=$resturant["link_path"] ?>">
-                        <p class="readMoreBtn">Les mer</p>
+                        <h1 class="card-title">
+                            <?= $event["name"] ?>
+                        </h1>
                     </a>
 
+                    <div class="card-description">
+                        <p>
+                            <?= $event["description"] ?>
+                        </p>
+                    </div>
+                </div>
 
-                </ul>
                 <?php } ?>
-            </li>
+            </div>
 
+            <div id="right-inner-box">
+                <div id="map"></div>
+            </div>
         </div>
     </div>
 <?php 
