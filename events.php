@@ -2,7 +2,7 @@
 require "php/db-connection.php";
 require "php/result-header.php";
 
-$statement = $connection -> prepare('SELECT * FROM event');
+$statement = $connection -> prepare('SELECT event.id, event.name, event.description, event.place, event.date, event.month, event.img_path, event.link_path, kategori.navn FROM event JOIN kategori on event.kategori_id = kategori.kategori_id ORDER BY event.id');
 
 $statement -> execute();
 
@@ -26,7 +26,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
         <a href="index.php"><img id="home-button" src="img/home.png"></a>
         
         <div id="page-title">
-            <h1>Hoteller</h1>
+            <h1>Events</h1>
         </div>
 
         <div id="menubar">
@@ -87,8 +87,20 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                             <?= $event["name"] ?>
                         </h1>
                     </a>
+                    
+                    <div class="card-month">
+                        <h2>
+                            <?= $event["date"], " ", $event["month"] ?>
+                        </h2>
+                    </div>
+                    
+                    <div class="card-category">
+                        <p>
+                            <?= $event["navn"] ?>
+                        </p>
+                    </div>
 
-                    <div class="card-description">
+                    <div class="card-event-description">
                         <p>
                             <?= $event["description"] ?>
                         </p>

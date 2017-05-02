@@ -69,13 +69,20 @@ a {
 }
 
 #title {
-    color: rgb(0, 63, 100);
+    color: hsl(202, 100%, 19.6%);
     position: relative;
     text-align: center;
     margin-top: auto;
     font-size: 5em;
     text-transform: uppercase;
     letter-spacing: 3px;
+}
+
+#demo{
+    transition-duration: 0.4s;
+}
+#demo:hover{
+    color: hsl(202, 100%, 15.6%);
 }
 
 #undertitle {

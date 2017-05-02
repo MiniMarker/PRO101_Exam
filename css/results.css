@@ -8,10 +8,6 @@ a {
     background: transparent;
 }
 
-html {
-    overflow: hidden;
-}
-
 body {
     margin: 0;
 }
@@ -44,12 +40,12 @@ body {
 #outer-box {
     position: relative;
     width: 80%;
-    height: 80%;
+    height: 80vh;
     margin: auto;
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px
+    grid-column-gap: 10px;
 }
 
 #left-inner-box,
@@ -57,6 +53,7 @@ body {
     background-color: rgb(250, 250, 250);
     border-radius: 10px;
     overflow-y: auto;
+    height: 80vh;
 }
 
 
@@ -83,11 +80,12 @@ body {
 
 #menubar {
     position: absolute;
+    /*border-bottom: 1px solid darkgray;*/
     width: 100%;
     height: 150px;
     background: rgba(0, 0, 0, .2);
     z-index: 1;
-    top: -150px;
+    top: -350px;
     opacity: 1;
     transition: top .5s ease;
 }
@@ -99,7 +97,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     position: relative;
     top: 0%;
-    width: 1200px;
+    width: 80%;
     margin: auto;
     margin-top: 10px;
 }
@@ -216,48 +214,116 @@ body {
     left: 58%;
 }
 
-.card-olpris{
-    background-color: hsla(143, 37%, 63%, 0.5);
+.card-olpris, .card-category{
     border-radius: 10px;
-    width: 140px;
     position: relative;
     top: -245px;
     left: 57.7%;
     text-align: center;
 }
 
+.card-olpris{
+    background-color: hsla(143, 37%, 63%, 0.5);
+    width: 140px;
+    top: -245px;
+}
 
-/* .card-rating {
-    position: relative;
-    font-family: sans-serif;
-    top: -220px;
-    width: 40%;
-    left: 60%;
-} */
+.card-category{
+    background-color: hsla(42, 100%, 70%, 0.5);
+    width: 90px;
+    top: -295px;
+}
 
-.card-description {
+.card-description, .card-event-description {
     position: relative;
-    top: -253px;
+    top: -297px;
     left: 58%;
     width: 40%;
 }
-.card-link{
-    position: relative;
-    bottom: 250px;
-    left: 58%;
-    width: 40%;
-    text-align: right;
+
+.card-description{
+    top: -252px;
 }
 
+.card-event-description{
+    top: -297px;
+}
+
+.card-month {
+    position: relative;
+    width: 80px;
+    left: 85.4%;
+    color: rgb(100,100,100);
+    top: -282px;
+    text-align: right
+}
 
 /* MAP */
 
 #map {
     height: 100%;
-    position: relative;
     border-radius: 10px;
 }
 
-.firstHeading {
-    color: rgb(0, 63, 100);
+/* MEDIA */
+@media screen and (min-width: 480px) {
+    html {
+        overflow: hidden;
+    }
+    
+    
+}
+
+@media screen and (max-width: 480px) {
+    #background {
+        height: 950px;
+    }
+    #menubar {
+        height: 350px;
+    }
+    #buttons {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 10px;
+    }
+    .button {
+        height: 100px;
+        width:100px;
+    }
+    .button p {
+        font-size: .95em
+    }
+    #page-title {
+        font-size: 1em;
+    }
+    #outer-box {
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+    }
+    #menu-botton, #close-menu-button, #home-button {
+        position: absolute;
+        width: 40px;
+        left: 10px;
+        top: 24px;
+        z-index: 2;
+        cursor: pointer;
+    }
+    #home-button{
+        top: 66px;
+    }
+    
+    #left-inner-box, #right-inner-box {
+        height: 400px;
+    }
+    
+    .card-img{
+        width: 0px;
+    }
+    
+    .cards * {
+        left: 10px;
+    }
+    
+    .card-title, .card-description {
+        width: 93%;
+    }
 }

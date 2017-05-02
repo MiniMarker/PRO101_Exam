@@ -111,11 +111,11 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                         </p>
                     </div>
                     
-                    <a href="<?= $bar["link-path"] ?>"> 
+                    <!--<a href="<?= $resturant["link-path"] ?>"> 
                         <p class="card-link">
                             Besøk siden
                         </p>
-                    </a>
+                    </a> -->
                 </div>
 
                 <?php } ?>

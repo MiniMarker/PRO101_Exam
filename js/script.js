@@ -8,9 +8,8 @@ function showDiv() {
         document.getElementById('menubar').style.top = "0px";
         document.getElementById('page-title').style.opacity = 0;
         document.getElementById('close-menu-button').style.display = "block";
-        
     } else {
-        document.getElementById('menubar').style.top = "-150px";
+        document.getElementById('menubar').style.top = "-350px";
         document.getElementById('page-title').style.opacity = 1;
         document.getElementById('close-menu-button').style.display = "none";
         down = false;
@@ -100,7 +99,7 @@ function myFunction() {
 
     }
 }
-
+/*
 // GOOGLE MAPS
 function initMap() {
     "use strict";
@@ -151,3 +150,4 @@ function initMap() {
         map: map
     });
 }
+*/
