@@ -32,13 +32,14 @@ a {
 
 #langInfo {
     position: absolute;
-    left: 400px;
-    top: 50px;
-    width: 150px;
+    left: 25%;
+    top: 2.5%;
+    width: 160px;
     height: 65px;
     background-color: rgba(250, 250, 250, 0.8);
     border-radius: 10px;
     display: block;
+    text-align: center;
 }
 
 #langInfo p {
@@ -64,16 +65,15 @@ a {
     position: relative;
     max-width: 1000px;
     height: 100px;
-    top: 10%;
+    top: 8%;
     margin: auto;
 }
 
 #title {
     color: hsl(202, 100%, 19.6%);
-    position: relative;
     text-align: center;
     margin-top: auto;
-    font-size: 5em;
+    font-size: 4.8em;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
@@ -90,14 +90,14 @@ a {
     letter-spacing: .5px;
     position: relative;
     text-align: center;
-    font-size: 2em;
-    top: -26%;
+    font-size: 1.8em;
+    top: -27%;
 }
 
 #textbox p {
     text-align: center;
     position: relative;
-    top: -70px;
+    top: -65px;
     color: rgb(0, 63, 100);
 }
 
@@ -110,14 +110,14 @@ a {
     grid-column-gap: 10%;
     grid-row-gap: 40px;
     position: relative;
-    top: 40%;
+    top: 35%;
     width: 610px;
     margin: auto;
 }
 
 .button {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     position: relative;
     border-radius: 20px;
     margin: auto;
@@ -138,7 +138,7 @@ a {
 .button p {
     text-align: center;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.1em;
     position: relative;
     top: -10px;
 }
