@@ -4,7 +4,7 @@ a {
 }
 
 ::-webkit-scrollbar {
-    display: none;
+    display: none
 }
 
 body {
@@ -265,18 +265,15 @@ body {
 }
 
 /* MEDIA */
-@media screen and (min-width: 480px) {
-    html {
-        overflow: hidden;
-    }
-    
-    
-}
-
 @media screen and (max-width: 480px) {
     ::-webkit-scrollbar {
         display: block;
+        background: transparent;
+        width: 5px
 }
+    ::-webkit-scrollbar-thumb {
+        background-color: grey;
+    }
     #background {
         height: 950px;
     }
