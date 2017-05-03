@@ -1,10 +1,22 @@
 
 function initMap() {
     var locations = [
-        ['<p>Anker Hotell</p>', 59.917714, 10.75591, 4],
-        ['<p>Thon Hotell Spectrum</p>', 59.913985, 10.753463, 3],
-        ['<p>Scandic Vulkan</p>', 59.9222276, 10.7488562, 2],
-        ['<p>PS: Hotell Vulkan</p>', 59.9221828, 10.7490982, 1]
+        ['<div id="content"> <div id="siteNotice"></div>' + 
+         '<h2 id="firstHeading" class="firstHeading">Anker Hotell</h2>' + 
+         '<div id="bodyContent">' +
+         '<p>Storgata 53, Oslo</p></div></div>', 59.917714, 10.75591, 4],
+        ['<div id="content"> <div id="siteNotice"></div>' + 
+         '<h2 id="firstHeading" class="firstHeading">Thon Hotel Spectrum</h2>' + 
+         '<div id="bodyContent">' +
+         '<p>Brugata 7, Oslo</p></div></div>', 59.913985, 10.753463, 3],
+        ['<div id="content"> <div id="siteNotice"></div>' + 
+         '<h2 id="firstHeading" class="firstHeading">Scandic Vulkan</h2>' + 
+         '<div id="bodyContent">' +
+         '<p>Maridalsveien , Oslo</p></div></div>', 59.9222276, 10.7488562, 2],
+        ['<div id="content"> <div id="siteNotice"></div>' + 
+         '<h2 id="firstHeading" class="firstHeading">PS: Hotel Vulkan</h2>' + 
+         '<div id="bodyContent">' +
+         '<p>Vulkan 22, Oslo</p></div></div>', 59.9221828, 10.7490982, 1]
     ];
 
     window.map = new google.maps.Map(document.getElementById('map'), {

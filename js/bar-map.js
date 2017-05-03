@@ -1,10 +1,25 @@
 function initMap() {
     var locations = [
-        ['<p>Crowbar</p>', 59.9171999,10.7534261, 6],
-        ['<p>Sjenkestua Studentbar</p>', 59.9160856,10.7599377, 5],
-        ['<p>Smelteverket</p>', 59.9223728,10.752400, 3],
-        ['<p>Pokalen</p>', 59.9224689,10.75120, 2],
-        ['<p>Ryes</p>', 59.9222518,10.7566619, 1]
+        ['<div id="content"> <div id="siteNotice"></div>' + 
+         '<h2 id="firstHeading" class="firstHeading">Crowbar</h2>' + 
+         '<div id="bodyContent">' +
+         '<p>Torggata 32, 0183 Oslo</p></div></div>', 59.9171999,10.7534261, 6],
+        ['<div id="content"> <div id="siteNotice"></div>' + 
+         '<h2 id="firstHeading" class="firstHeading">Sjenkestua studentbar</h2>' + 
+         '<div id="bodyContent">' +
+         '<p>Chr. Krohgs gate 32A</p></div></div>', 59.9160856,10.7599377, 5],
+        ['<div id="content"> <div id="siteNotice"></div>' + 
+         '<h2 id="firstHeading" class="firstHeading">Smelteverket</h2>' + 
+         '<div id="bodyContent">' +
+         '<p>Maridalsveien 17A, 0178 Oslo</p></div></div>', 59.9223728,10.752400, 3],
+        ['<div id="content"> <div id="siteNotice"></div>' + 
+         '<h2 id="firstHeading" class="firstHeading">Pokalen</h2>' + 
+         '<div id="bodyContent">' +
+         '<p>Vulkan 26, 0178 Oslo</p></div></div>', 59.9224689,10.75120, 2],
+        ['<div id="content"> <div id="siteNotice"></div>' + 
+         '<h2 id="firstHeading" class="firstHeading">Ryes</h2>' + 
+         '<div id="bodyContent">' +
+         '<p>Sofienberggata</p></div></div>', 59.9222518,10.7566619, 1]
     ];
 
     window.map = new google.maps.Map(document.getElementById('map'), {
