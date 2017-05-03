@@ -4,8 +4,7 @@ a {
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
+    display: none;
 }
 
 body {
@@ -275,6 +274,9 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    ::-webkit-scrollbar {
+        display: block;
+}
     #background {
         height: 950px;
     }
