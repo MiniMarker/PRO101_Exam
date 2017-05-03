@@ -251,11 +251,12 @@ body {
 
 .card-month {
     position: relative;
-    width: 80px;
-    left: 85.4%;
+    width: 90px;
+    left: 80%;
     color: rgb(100,100,100);
-    top: -282px;
-    text-align: right
+    top: -250px;
+    text-align: right;
+    font-size: 1em;
 }
 
 /* MAP */
