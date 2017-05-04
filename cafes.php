@@ -16,6 +16,8 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 <head>
     <title>Caféer</title> 
     <script src="js/cafe-map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDom7SHx9ZtEf7dQKyTbbvGjEjkG-aTc6o&callback=initMap" async defer>
+    </script>
 </head>
 
 <body>

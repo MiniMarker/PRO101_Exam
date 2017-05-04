@@ -12,8 +12,10 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 
 ?>
 <head>
-    <title>Bar</title>
+    <title>Barer</title>
     <script src="js/bar-map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDom7SHx9ZtEf7dQKyTbbvGjEjkG-aTc6o&callback=initMap" async defer>
+    </script>
 </head>
 
 <body>
@@ -96,12 +98,6 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                             <?= $bar["description"] ?>
                         </p>
                     </div>
-                    
-                    <a href="<?= $bar["link-path"] ?>"> 
-                        <p class="card-link">
-                            Besøk siden
-                        </p>
-                    </a>
                 </div>
 
                 <?php } ?>

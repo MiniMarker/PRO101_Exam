@@ -1,5 +1,5 @@
 
-function initMap() {
+window.initMap = function(){
     var locations = [
         ['<div id="content"> <div id="siteNotice"></div>' + 
          '<h2 id="firstHeading" class="firstHeading">Kontrast</h2>' + 

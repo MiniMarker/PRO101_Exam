@@ -50,7 +50,7 @@ body {
     background-color: rgb(250, 250, 250);
     border-radius: 10px;
     overflow-y: auto;
-    height: 76vh;
+    height: 78vh;
 }
 
 
@@ -256,12 +256,16 @@ body {
     text-align: right;
     font-size: 1em;
 }
+.card-link{
+    width: 100px;
+}
 
 /* MAP */
 
 #map {
     height: 100%;
     border-radius: 10px;
+    -webkit- border-radius: 10px;
 }
 
 /* MEDIA */

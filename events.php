@@ -13,8 +13,10 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 ?>
 
 <head>
-    <title>Hotell</title>
-    <script src="js/hotell-map.js"></script>
+    <title>Events</title>
+    <script src="js/event-map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDom7SHx9ZtEf7dQKyTbbvGjEjkG-aTc6o&callback=initMap" async defer>
+    </script>
 </head>
 
 <body>
@@ -115,6 +117,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
             </div>
         </div>
     </div>
+    
 <?php 
     require "php/footer.php";
 ?>

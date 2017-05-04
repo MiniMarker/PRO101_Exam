@@ -15,6 +15,10 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
 <head>
     <title>Aktiviteter</title>
     <script src="js/aktiviteter-map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDom7SHx9ZtEf7dQKyTbbvGjEjkG-aTc6o&callback=initMap" async defer>
+
+
+    </script>
 </head>
 
 <body>
@@ -26,7 +30,7 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
         <a href="index.php"><img id="home-button" src="img/home.png"></a>
 
         <div id="page-title">
-            <h1>Aktivitet</h1>
+            <h1>Aktiviteter</h1>
         </div>
 
         <div id="menubar">
@@ -80,14 +84,14 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                 <?php foreach($aktiviteter as $aktivitet) { ?>
 
                 <div class="cards">
-                    <a href="<?= $aktivitet["link-path"] ?>">
+                    <a href="<?= $aktivitet[" link-path "] ?>">
                         <img class="card-img" src="<?= $aktivitet["img_path"] ?>">
-                        
+
                         <h1 class="card-title">
                             <?= $aktivitet["name"] ?>
                         </h1>
                     </a>
-
+                    
                     <?php if ($aktivitet["rating"] == 5) { ?>
                     <img class="card-stars" src="img/stars/5-stars.png">
 
@@ -111,7 +115,6 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                         </p>
                     </div>
                 </div>
-
                 <?php } ?>
             </div>
 
@@ -120,6 +123,6 @@ while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
             </div>
         </div>
     </div>
-<?php 
+    <?php 
     require "php/footer.php";
 ?>
