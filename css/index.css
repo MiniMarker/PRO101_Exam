@@ -1,3 +1,5 @@
+/* GENERELLE INNSTILLINGER */
+
 html {
     overflow: hidden;
 }
@@ -21,14 +23,6 @@ a {
     height: 100%;
     position: absolute;
 }
-
-
-/* #languageFlag {
-    position: absolute;
-    width: 50px;
-    left: 95%;
-    top: 2%;
-} */
 
 #langInfo {
     position: absolute;
@@ -78,10 +72,11 @@ a {
     letter-spacing: 3px;
 }
 
-#demo{
+#demo {
     transition-duration: 0.4s;
 }
-#demo:hover{
+
+#demo:hover {
     color: hsl(202, 100%, 15.6%);
 }
 
@@ -148,17 +143,9 @@ a {
     transition-duration: 0.4s;
 }
 
-#hotel-button:hover {
-    background-color: hsl(6, 100%, 63%);
-}
-
 #cafe-button {
     background-color: hsl(143, 37%, 63%);
     transition-duration: 0.4s;
-}
-
-#cafe-button:hover {
-    background-color: hsl(143, 37%, 57%);
 }
 
 #resturant-button {
@@ -166,17 +153,9 @@ a {
     transition-duration: 0.4s;
 }
 
-#resturant-button:hover {
-    background-color: hsl(42, 100%, 64%);
-}
-
 #beer-button {
     background-color: hsl(195, 48%, 58%);
     transition-duration: 0.4s;
-}
-
-#beer-button:hover {
-    background-color: hsl(195, 48%, 52%);
 }
 
 #ticket-button {
@@ -184,72 +163,34 @@ a {
     transition-duration: 0.4s;
 }
 
-#ticket-button:hover {
-    background-color: hsl(289, 21%, 36%);
-}
-
 #activity-button {
     background-color: hsl(0, 0%, 66%);
     transition-duration: 0.4s;
 }
 
+
+/* BUTTON FX */
+
+#hotel-button:hover {
+    background-color: hsl(6, 100%, 63%);
+}
+
+#cafe-button:hover {
+    background-color: hsl(143, 37%, 57%);
+}
+
+#resturant-button:hover {
+    background-color: hsl(42, 100%, 64%);
+}
+
+#beer-button:hover {
+    background-color: hsl(195, 48%, 52%);
+}
+
+#ticket-button:hover {
+    background-color: hsl(289, 21%, 36%);
+}
+
 #activity-button:hover {
     background-color: hsl(0, 0%, 60%);
-}
-
-
-/* MEDIA QUERY */
-
-@media screen and (max-width: 942px) {
-    #title {
-        font-size: 4.5em;
-    }
-    #undertitle {
-        font-size: 1.6em;
-        padding-top: 0px;
-    }
-    #buttons {
-        width: 400px;
-    }
-    .button {
-        width: 120px;
-        height: 120px;
-    }
-}
-
-@media screen and (max-width: 641px) {
-    #title {
-        font-size: 3.5em;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #textbox {
-        top: 5%;
-    }
-    #title {
-        font-size: 2.2em;
-    }
-    #undertitle {
-        font-size: 1.2em;
-        padding-top: 30px;
-    }
-    #textbox p {
-        top: -20px;
-    }
-    #buttons {
-        top: 30%;
-        width: 360px;
-    }
-    .button {
-        width: 100px;
-        height: 100px;
-    }
-    .button p {
-        font-size: 1em;
-    }
-    #langInfo,
-    #bookmark {
-        display: none;
-    }
 }

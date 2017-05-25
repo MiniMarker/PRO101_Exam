@@ -6,16 +6,26 @@ require "php/index-header.php";
     <div id="container">
         <img id="background" src="img/background.png">
         
+        
+        <!-- WESTERDALS LOGO -->
         <div id="bookmark">
             <a href="http://westerdals.no">
                 <img src="img/bookmark.png">
             </a>
         </div>
+        <!-- WESTERDALS LOGO SLUTT -->
         
+        
+        
+        <!-- SPRÅKINFO BOKS -->
         <div id="langInfo">
             <p>Trykk på teksten for å endre språk</p>
         </div>
-
+        <!-- SPRÅKINFO BOKS SLUTT -->
+        
+        
+        
+        <!-- TITTEL -->
         <div id="textbox">
             <h1 id="title">
                 <span onclick="myFunction()" id="demo">Velkommen</span> til Westerdals Vulkan
@@ -25,7 +35,11 @@ require "php/index-header.php";
             
             <h3 id="undertitle">På denne siden kan du utforske nærområdet rundt skolen</h3>
         </div>
-
+        <!-- TITTEL SLUTT -->
+        
+        
+        
+        <!-- BUTTONS -->
         <div id="buttons">
             <a href="hotell.php">
                 <div class="button" id="hotel-button">
@@ -69,11 +83,12 @@ require "php/index-header.php";
                 </div>
             </a>
         </div>
-
-
-
-        <!-- <img id="languageFlag" src="img/flag/english2.png"> -->
+        <!-- BUTTONS SLUTT -->
+        
+        
+        
     </div>
+    
 <?php 
     require "php/footer.php";
 ?>

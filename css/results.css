@@ -1,20 +1,27 @@
-a {
-    color: black;
-    text-decoration: none;
-}
+
+/* SROLLBAR */
 
 ::-webkit-scrollbar {
     display: block;
-        background: transparent;
-        width: 5px
+    background: transparent;
+    width: 5px
 }
 
 ::-webkit-scrollbar-thumb {
-        background-color: grey;
-    }
+    background-color: grey;
+}
+
+
+
+/* GENERELLE INNSTILLINGER */
 
 body {
     margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 #container {
@@ -30,6 +37,10 @@ body {
     position: absolute;
 }
 
+
+
+/* SIDETITTEL */
+
 #page-title {
     text-align: center;
     text-transform: uppercase;
@@ -41,6 +52,10 @@ body {
     opacity: 1;
     transition: opacity .5s ease;
 }
+
+
+
+/* YTRE- OG INDRE BOKSER */
 
 #outer-box {
     position: relative;
@@ -60,7 +75,8 @@ body {
 }
 
 
-/* MENUBAR */
+
+/* MENYBAR */
 
 #menu-botton,
 #close-menu-button,
@@ -73,6 +89,10 @@ body {
     cursor: pointer;
 }
 
+
+
+/* MENYKNAPPER */
+
 #home-button {
     left: 100px;
 }
@@ -80,6 +100,10 @@ body {
 #close-menu-button {
     display: none;
 }
+
+
+
+/* MENY */
 
 #menubar {
     position: absolute;
@@ -92,6 +116,9 @@ body {
     opacity: 1;
     transition: top .5s ease;
 }
+
+
+
 
 /* BUTTONS */
 
@@ -133,17 +160,9 @@ body {
     transition-duration: 0.4s;
 }
 
-#hotel-button:hover {
-    background-color: hsl(6, 100%, 63%);
-}
-
 #cafe-button {
     background-color: hsl(143, 37%, 63%);
     transition-duration: 0.4s;
-}
-
-#cafe-button:hover {
-    background-color: hsl(143, 37%, 57%);
 }
 
 #resturant-button {
@@ -151,17 +170,9 @@ body {
     transition-duration: 0.4s;
 }
 
-#resturant-button:hover {
-    background-color: hsl(42, 100%, 64%);
-}
-
 #beer-button {
     background-color: hsl(195, 48%, 58%);
     transition-duration: 0.4s;
-}
-
-#beer-button:hover {
-    background-color: hsl(195, 48%, 52%);
 }
 
 #ticket-button {
@@ -169,18 +180,39 @@ body {
     transition-duration: 0.4s;
 }
 
-#ticket-button:hover {
-    background-color: hsl(289, 21%, 36%);
-}
-
 #activity-button {
     background-color: hsl(0, 0%, 66%);
     transition-duration: 0.4s;
 }
 
+
+
+/* BUTTONS FX */
+
+#hotel-button:hover {
+    background-color: hsl(6, 100%, 63%);
+}
+
+#cafe-button:hover {
+    background-color: hsl(143, 37%, 57%);
+}
+
+#resturant-button:hover {
+    background-color: hsl(42, 100%, 64%);
+}
+
+#beer-button:hover {
+    background-color: hsl(195, 48%, 52%);
+}
+
+#ticket-button:hover {
+    background-color: hsl(289, 21%, 36%);
+}
+
 #activity-button:hover {
     background-color: hsl(0, 0%, 60%);
 }
+
 
 
 /* CARDS */
@@ -216,7 +248,8 @@ body {
     left: 58%;
 }
 
-.card-olpris, .card-category{
+.card-olpris,
+.card-category {
     border-radius: 10px;
     position: relative;
     top: -245px;
@@ -224,20 +257,21 @@ body {
     text-align: center;
 }
 
-.card-olpris{
+.card-olpris {
     background-color: hsla(143, 37%, 63%, 0.5);
     width: 140px;
     top: -245px;
 }
 
-.card-category{
+.card-category {
     background-color: hsla(42, 100%, 70%, 0.5);
     width: 90px;
     top: -295px;
     left: 75%;
 }
 
-.card-description, .card-event-description {
+.card-description,
+.card-event-description {
     position: relative;
     top: -297px;
     left: 58%;
@@ -245,25 +279,28 @@ body {
     font-size: 1em;
 }
 
-.card-description{
+.card-description {
     top: -252px;
 }
 
-.card-event-description{
+.card-event-description {
     top: -297px;
 }
 
-.card-month {
+.card-date {
     position: relative;
     width: 90px;
     left: 57.7%;
-    color: rgb(100,100,100);
+    color: rgb(100, 100, 100);
     top: -250px;
     font-size: 1em;
 }
-.card-link{
+
+.card-link {
     width: 100px;
 }
+
+
 
 /* MAP */
 
