@@ -1,13 +1,6 @@
 <?php
 
-//LOCALHOST
-
-//$port = 8889;
-//$username = "root";
-//$password = "root";
-//$name = "eksamen_gruppe17";
-//$host = "localhost";
-
+//Databasetilkobling
 
 $port = 3306;
 $username = "marchr16_cmarker";

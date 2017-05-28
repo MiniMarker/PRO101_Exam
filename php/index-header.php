@@ -1,3 +1,6 @@
+
+<!-- Her settes headerinnstillingene til index.php -->
+
 <!DOCTYPE html>
 <html>
 <head>

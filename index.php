@@ -28,7 +28,7 @@ require "php/index-header.php";
         <!-- TITTEL -->
         <div id="textbox">
             <h1 id="title">
-                <span onclick="myFunction()" id="demo">Velkommen</span> til Westerdals Vulkan
+                <span onclick="myFunction()" id="demo">Velkommen</span> til Westerdals
             </h1>
             
             <p id="language"></p>
