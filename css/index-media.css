@@ -1,29 +1,5 @@
 /* MEDIA QUERY */
 
-@media screen and (max-width: 942px) {
-    #title {
-        font-size: 4.5em;
-    }
-    #undertitle {
-        font-size: 1.6em;
-        padding-top: 0px;
-    }
-    #buttons {
-        width: 400px;
-    }
-    .button {
-        width: 120px;
-        height: 120px;
-    }
-}
-
-@media screen and (max-width: 641px) {
-    #title {
-        font-size: 3.5em;
-    }
-}
-
-@media screen and (max-width: 480px) {
     #textbox {
         top: 5%;
     }

@@ -12,7 +12,7 @@
 
     <!-- CSS -->
     <link href="css/results.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" media="(max-width: 480px)" href="../css/results-media.css">
+    <link rel="stylesheet" media="(max-width: 480px)" href="css/results-media.css">
     <link href="OpenSans/stylesheet.css" type="text/css" rel="stylesheet">
 
     <!-- JAVASCRPT -->
